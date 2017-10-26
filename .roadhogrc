@@ -1,0 +1,15 @@
+{
+  "entry": "src/index.js",
+  "extraBabelPlugins": [
+    "transform-runtime",
+    ["import", { "libraryName": "antd", "style": "css" }]
+  ],
+  "env": {
+    "development": {
+      "extraBabelPlugins": ["dva-hmr"]
+    }
+  },
+  "outputPath": "./build",
+  "multipage": true,
+  "hash": false
+}
